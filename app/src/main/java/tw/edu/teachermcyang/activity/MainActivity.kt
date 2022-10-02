@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         var isAsking = false
     }
 
+    private lateinit var askList: ArrayList<String>
     private lateinit var homeList: ArrayList<HomeDto>
     private lateinit var homeOldList: ArrayList<HomeDto>
 
@@ -45,46 +46,45 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun studentAsking(beacon: Beacon?) {
-        if (!isAsking) {
-            isAsking = true
+        isAsking = true
 
-            val jsonArray = JSONArray(sharedData.get<ArrayList<SignDto>>(sharedData.keySignList))
-            for (i in 0 until jsonArray.length()) {
-                val jsonObject = jsonArray.getJSONObject(i)
-                val sid = jsonObject.getString(AppConfig.API_SID)
-                val sName = jsonObject.getString(AppConfig.API_SNAME)
-                val studentID = jsonObject.getString("StudentID")
+        val jsonArray = JSONArray(sharedData.get<ArrayList<SignDto>>(sharedData.keySignList))
+        for (i in 0 until jsonArray.length()) {
+            val jsonObject = jsonArray.getJSONObject(i)
+            val sid = jsonObject.getString(AppConfig.API_SID)
+            val sName = jsonObject.getString(AppConfig.API_SNAME)
+            val studentID = jsonObject.getString("StudentID")
 
-                if (beacon?.id3.toString() == sid) {
-                    val home = HomeDto(sid, sName, studentID)
-                    if (homeList.any { it.S_id == sid }) return
-                    if (homeOldList.any{ it.S_id == sid }) return
-                    homeList.add(home)
-                    break
+            if (beacon?.id3.toString() == sid) {
+                val home = HomeDto(sid, sName, studentID)
+                if (homeList.any { it.S_id == sid }) return
+                if (homeOldList.any { it.S_id == sid }) return
+                homeList.add(home)
+                break
+            }
+        }
+        val home = homeList[0]
+
+        homeOldList.add(home)
+        askList.add(home.S_name)
+
+        askList = askList.distinctBy { it }.toCollection(ArrayList())
+        sharedData.put(askList, sharedData.askingList)
+
+        Snackbar.make(navHostFragment, home.S_name + "同學，正在提問中", Snackbar.LENGTH_INDEFINITE)
+            .setAction(R.string.alert_positive) {
+                while (isAsking) isAsking = false
+                homeList.remove(home)
+                try {
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        homeOldList.remove(home)
+                    }, 15000)
+
+                } catch (e: Exception) {
+                    Log.e(TAG, e.toString())
                 }
             }
-            val home = homeList[0]
-
-            homeOldList.add(home)
-
-            Log.e(TAG, "studentAsking: ")
-
-            Snackbar.make(navHostFragment, home.S_name + "同學，正在提問中", Snackbar.LENGTH_INDEFINITE)
-                .setAction(R.string.alert_positive) {
-                    homeList.remove(home)
-                    try {
-                        Handler(Looper.getMainLooper()).postDelayed({
-                            homeOldList.remove(home)
-                        }, 15000)
-
-                    } catch (e: Exception) {
-                        Log.e(TAG, e.toString())
-                    }
-
-                    isAsking = false
-                }
-                .show()
-        }
+            .show()
     }
 
     private fun beaconScanning() {
@@ -103,9 +103,15 @@ class MainActivity : AppCompatActivity() {
 
                         beacons?.forEach { it ->
                             if (it?.id2.toString() == sharedData.getSignID()) {
+                                if (isAsking) {
+                                    if (homeList.size == 0) isAsking = false
+                                    return
+                                }
+
                                 studentAsking(it)
                             }
                         }
+
                         Log.e(TAG, "modifyData: $beacons | ${homeList.size} | $isAsking")
                     }
                 })
@@ -118,11 +124,15 @@ class MainActivity : AppCompatActivity() {
         navHostFragment = findViewById(R.id.fragment)
         bottomNavigationView.setupWithNavController(navHostFragment.findNavController())
 
+        askList = ArrayList()
         homeList = ArrayList()
         homeOldList = ArrayList()
 
         sharedData = SharedData(this)
-        beaconController = BeaconController(this, Region("Main", Identifier.parse(AppConfig.BEACON_UUID_MAIN), null, null))
+        beaconController = BeaconController(
+            this,
+            Region("Main", Identifier.parse(AppConfig.BEACON_UUID_MAIN), null, null)
+        )
     }
 
     override fun onResume() {

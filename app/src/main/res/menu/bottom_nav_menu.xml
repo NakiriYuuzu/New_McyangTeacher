@@ -8,12 +8,16 @@
         android:id="@+id/courseFragment"
           android:title="@string/main_text_Course"
           android:icon="@drawable/ic_baseline_book_24" />
+<!--    <item-->
+<!--        android:id="@+id/qaFragment"-->
+<!--        android:title="@string/main_text_QA"-->
+<!--        android:icon="@drawable/ic_baseline_connect_without_contact_24" />-->
+<!--    <item-->
+<!--        android:id="@+id/groupFragment"-->
+<!--        android:title="@string/main_text_Group"-->
+<!--        android:icon="@drawable/ic_baseline_groups_24" />-->
     <item
-        android:id="@+id/qaFragment"
-        android:title="@string/main_text_QA"
-        android:icon="@drawable/ic_baseline_connect_without_contact_24" />
-    <item
-        android:id="@+id/groupFragment"
-        android:title="@string/main_text_Group"
-        android:icon="@drawable/ic_baseline_groups_24" />
+        android:id="@+id/funcFragment"
+          android:title="功能"
+          android:icon="@drawable/ic_baseline_connect_without_contact_24" />
 </menu>

@@ -12,6 +12,7 @@ class SharedData(activity: Activity) {
     val pref: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity)
 
     val keySignList = "SignList"
+    val askingList = "AskingList"
 
     fun <T> put(`object`: T, key: String) {
         val jsonString = GsonBuilder().create().toJson(`object`)
@@ -36,6 +37,7 @@ class SharedData(activity: Activity) {
         saveSignPeople("")
         saveSignDate("")
         put(ArrayList<SignDto>(), keySignList)
+        put(ArrayList<String>(), askingList)
     }
 
     fun saveSplashStatus(status: Boolean) {
