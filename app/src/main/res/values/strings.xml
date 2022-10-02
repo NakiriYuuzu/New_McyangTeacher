@@ -1,0 +1,144 @@
+<resources>
+    <string name="applicationName">情境劇本Beacon互動教學工具</string>
+
+    <!-- TODO: AlertBuilder -->
+    <string name="alert_positive">確認</string>
+    <string name="alert_negative">取消</string>
+    <string name="alert_error_noSignID">請先簽到后在操作此畫面！</string>
+    <string name="alert_sweetAlert_Success">完成！</string>
+    <string name="alert_sweetAlert_Failed">失敗！</string>
+    <string name="alert_error_title_noInternet">網絡異常</string>
+    <string name="alert_error_noInternet">無法建立與後臺連線！請檢查網絡是否打開！</string>
+    <string name="alert_error_title_noServer">伺服器異常</string>
+    <string name="alert_error_title_json">系統上的錯誤</string>
+    <string name="alert_error_json">錯誤信息：</string>
+    <string name="alert_error_400">欄位資料空白或有誤！</string>
+    <string name="alert_error_404">查無資料此資料！</string>
+    <string name="alert_error_406">不接受此資料來源！</string>
+    <string name="alert_error_417">資料庫欄位異常，目前無法新增資料！</string>
+    <string name="alert_error_500">網絡異常, 無法建立與後臺連線！</string>
+    <string name="alert_beacon_NoMajorMinor">無法取得有效的課程ID，請在嘗試一次！</string>
+    <string name="alert_beacon_Exception">Beacon功能出現錯誤！</string>
+    <string name="alert_quit">確定要離開嗎？</string>
+    <string name="alert_signFirst">請先簽到后在操作此功能。</string>
+    <string name="alert_signToday">發現簽到已過期，點擊確認將會導向至簽到畫面。</string>
+    <string name="alert_inputNull">欄位不可為空！</string>
+
+    <!-- TODO: Other -->
+    <string name="toast_NOT_EMPTY">欄位不可爲空！</string>
+    <string name="button_Send">送出</string>
+
+    <!-- TODO: Splash Screen -->
+    <string name="splash_Prev">上一頁</string>
+    <string name="splash_Next">下一頁</string>
+    <string name="splash_Start">開始使用</string>
+    <string name="splash_CheckBox">不再提示</string>
+
+    <!-- TODO: Login -->
+    <string name="login_text_Account">帳號</string>
+    <string name="login_text_Password">密碼</string>
+    <string name="login_toggle_RememberMe">記住我</string>
+    <string name="login_btn_Login">登入</string>
+    <string name="login_error_empty">請輸入帳號和密碼！</string>
+    <string name="login_error_wrongInput">帳號或密碼錯誤！</string>
+    <string name="login_error_noInternet">無法建立連線！</string>
+
+    <!-- TODO: Main -->
+    <string name="main_text_Home">目錄</string>
+    <string name="main_text_Course">課程</string>
+    <string name="main_text_QA">答題</string>
+    <string name="main_text_Group">群組</string>
+
+    <!-- TODO: Home -->
+    <string name="home_text_Hello">您好,</string>
+    <string name="home_text_SubName">老師</string>
+    <string name="home_text_Welcome">歡迎使用情境劇本Beacon互動教學工具</string>
+    <string name="home_text_courseNowNone">課程：未選擇課程，請開始課程</string>
+    <string name="home_text_courseTeacher">人數：0</string>
+    <string name="home_text_function">同學提問</string>
+    <string name="home_text_btnJoin">開始課程</string>
+    <string name="home_text_btnLeave">結束課程</string>
+    <string name="home_text_btnAsking">提問老師</string>
+    <string name="home_text_btnDomJudge">DomJudge學習歷程</string>
+    <string name="home_text_quitSign_Title">確定要結束課程？</string>
+    <string name="home_text_quitSign_Message">結束課程請點擊結束\n\n繼續簽到請點擊續簽\n\n不做任何動作[取消]請點擊此外框。</string>
+    <string name="home_text_quitSign_Continue">續簽</string>
+    <string name="home_text_quitSign_Quit">結束</string>
+
+    <!-- TODO: Course -->
+    <string name="course_text_Course">我的課程</string>
+    <string name="course_text_fail2Load">與後臺連接失敗，請查看網絡或稍後嘗試。</string>
+    <string name="course_text_fail2Load404">無法取得資料請稍後在嘗試。</string>
+
+    <!-- TODO: QA -->
+    <string name="qa_text_QA">互動問答搶</string>
+    <string name="qa_text_QA_Race">互動搶答</string>
+    <string name="qa_text_QA_Quiz">互動答題</string>
+    <string name="qa_text_Qa_Race_detail">等待老師發起廣播之後就可以\n開始搶答!</string>
+    <string name="qa_text_Qa_Quiz_detail">等待老師開放題目之後便可開始\n作答題目！</string>
+    <string name="qa_text_QA_Answering">待批改</string>
+    <string name="qa_text_QA_Correct">正確</string>
+    <string name="qa_text_QA_Wrong">錯誤</string>
+
+    <!-- TODO: Group -->
+    <string name="group_text_Group">群組互動</string>
+    <string name="group_text_Create">組成群組</string>
+    <string name="group_text_Chat">群組聊天室</string>
+    <string name="group_text_Create_detail">可以選擇當組長或組員之後等待\n老師確認便可完成組隊！</string>
+    <string name="group_text_Chat_detail">可以跟組内的同學一起討論\n老師出的課題!</string>
+
+    <!-- TODO: Sign -->
+    <string name="sign_text_choose">選擇課程</string>
+    <string name="sign_text_Title_choose">選擇詳細課程</string>
+    <string name="sign_text_Title">簽到課程</string>
+    <string name="sign_text_CourseTitle">課程：</string>
+    <string name="sign_text_CoursePeople">人數：</string>
+    <string name="sign_btn_finish">完成簽到</string>
+    <string name="sign_text_status_ok">已簽到</string>
+    <string name="sign_text_status_no">未簽到</string>
+    <string name="sign_text_leave_title">確認點名</string>
+
+    <!-- TODO: Race -->
+    <string name="race_text_raceInput">輸入題目</string>
+    <string name="race_text_raceTitle">題目：</string>
+    <string name="race_text_raceStart">開放中</string>
+    <string name="race_text_raceStop">已停止</string>
+    <string name="race_text_raceEnd">已結束</string>
+    <string name="race_text_Answer_0">批改</string>
+    <string name="race_text_Answer_1">正確</string>
+    <string name="race_text_Answer_99">錯誤</string>
+    <string name="race_text_Title_confirm">確認批改</string>
+    <string name="race_text_Message_confirm">點擊外圍取消批改，點擊正確批改為正確，點擊錯誤批改為錯誤</string>
+    <string name="race_text_btn_confirm_Correct">正確</string>
+    <string name="race_text_btn_confirm_Error">錯誤</string>
+    <string name="race_text_quit_title">確認停止廣播嗎？</string>
+    <string name="race_btn_End">結束搶答</string>
+    <string name="race_alert_EndTitle">確定結束搶答嗎？</string>
+    <string name="race_alert_EndMessage">結束之後將會把結果發給學生，並離開此畫面。</string>
+
+    <!-- TODO: GroupCreate -->
+    <string name="groupCreate_Title">創建群組</string>
+    <string name="groupCreate_text_GroupName">群組名稱</string>
+    <string name="groupCreate_text_GroupDesc">群組簡介</string>
+    <string name="groupCreate_text_GroupTotal">組數</string>
+    <string name="groupCreate_text_GroupTotal_Desc">需要多少個組別</string>
+    <string name="groupCreate_text_GroupLimit">人數</string>
+    <string name="groupCreate_text_GroupLimit_Desc">組別的人數上限</string>
+    <string name="groupCreate_alert_NullName">群組名稱不可爲空！</string>
+    <string name="groupCreate_alert_NullDesc">群組簡介不可爲空！</string>
+    <string name="groupCreate_alert_NullTotal">組數不可爲空！</string>
+    <string name="groupCreate_alert_NullLimit">人數不可爲空！</string>
+    <string name="groupCreate_alert_TotalAndLimit">不可小於等於1！</string>
+    <string name="groupCreate_Scene_1_Title">群組設定</string>
+    <string name="groupCreate_Scene_2_Title">選擇隊長</string>
+    <string name="groupCreate_Scene_2_Btn">下一步</string>
+    <string name="groupCreate_Scene_3_Title">組員分配</string>
+    <string name="groupCreate_Scene_3_Btn">完成組隊</string>
+    <string name="groupCreate_Btn_Text">完成分組</string>
+    <string name="groupCreate_text_Broadcasting">廣播中</string>
+    <string name="groupCreate_text_End_Broadcast">已停止</string>
+
+    <!-- TODO: GROUP Chat -->
+    <string name="groupChat_text_Title">群組聊天室</string>
+
+</resources>

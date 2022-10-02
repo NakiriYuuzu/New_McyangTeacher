@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+          android:title="@string/main_text_Home"
+          android:icon="@drawable/ic_baseline_home_24" />
+    <item
+        android:id="@+id/courseFragment"
+          android:title="@string/main_text_Course"
+          android:icon="@drawable/ic_baseline_book_24" />
+    <item
+        android:id="@+id/qaFragment"
+        android:title="@string/main_text_QA"
+        android:icon="@drawable/ic_baseline_connect_without_contact_24" />
+    <item
+        android:id="@+id/groupFragment"
+        android:title="@string/main_text_Group"
+        android:icon="@drawable/ic_baseline_groups_24" />
+</menu>
