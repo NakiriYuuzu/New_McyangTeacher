@@ -3,7 +3,7 @@ package tw.edu.teachermcyang
 object AppConfig {
     // TODO: APP version
     const val APP_VERSION = "1.0.0"
-    const val DEBUG = true
+    const val DEBUG = false
 
     const val TAG = "=====MCYANG_DEBUG===== : "
 

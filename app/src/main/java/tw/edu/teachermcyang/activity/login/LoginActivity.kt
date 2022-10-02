@@ -66,7 +66,7 @@ class LoginActivity : AppCompatActivity() {
             binding.loginInputPass.setText(sharedData.getLoginPwd())
             binding.loginCheckBoxRememberMe.isChecked = true
             // FIXME : REMOVE THIS AFTER FINISH DEV
-            login()
+            if (AppConfig.DEBUG) login()
         }
     }
 
