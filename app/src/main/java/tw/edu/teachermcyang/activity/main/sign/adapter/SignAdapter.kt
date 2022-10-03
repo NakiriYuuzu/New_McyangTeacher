@@ -30,7 +30,7 @@ class SignAdapter(var signList: ArrayList<SignDto>) : RecyclerView.Adapter<SignA
         holder.binding.textName.text = sign.S_name
 
         if (sign.S_name.length > 2) {
-            holder.binding.iconText.text = sign.S_name.substring(2)
+            holder.binding.iconText.text = sign.S_name.substring(sign.S_name.length - 2)
         } else {
             holder.binding.iconText.text = sign.S_name
         }

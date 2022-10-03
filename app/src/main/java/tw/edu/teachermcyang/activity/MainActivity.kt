@@ -74,6 +74,7 @@ class MainActivity : AppCompatActivity() {
         Snackbar.make(navHostFragment, home.S_name + "同學，正在提問中", Snackbar.LENGTH_INDEFINITE)
             .setAction(R.string.alert_positive) {
                 while (isAsking) isAsking = false
+                isAsking = false
                 homeList.remove(home)
                 try {
                     Handler(Looper.getMainLooper()).postDelayed({
@@ -103,11 +104,7 @@ class MainActivity : AppCompatActivity() {
 
                         beacons?.forEach { it ->
                             if (it?.id2.toString() == sharedData.getSignID()) {
-                                if (isAsking) {
-                                    if (homeList.size == 0) isAsking = false
-                                    return
-                                }
-
+                                if (isAsking) return
                                 studentAsking(it)
                             }
                         }

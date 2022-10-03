@@ -53,7 +53,7 @@ class LeaderAdapter(private val onItemClickListener: OnItemClickListener) : Recy
         val leaderList = differ.currentList[position]
         holder.binding.apply {
             if (leaderList.studentName.length < 2) iconText.text = leaderList.studentName
-            else iconText.text = leaderList.studentName.substring(0, 2)
+            else iconText.text = leaderList.studentName.substring(leaderList.studentName.length - 2)
 
             when (leaderList.isPicked) {
                 "0" -> {

@@ -56,7 +56,7 @@ class MemberAdapter(private val onItemClickListener: OnItemClickListener) : Recy
         val memberList = differ.currentList[position]
         holder.binding.apply {
             if (memberList.studentName.length < 2) iconText.text = memberList.studentName
-            else iconText.text = memberList.studentName.substring(0, 2)
+            else iconText.text = memberList.studentName.substring(memberList.studentName.length - 2)
 
             if (memberList.peopleCount.split("/")[0] == memberList.peopleCount.split("/")[1]) {
                 eventText.setTextColor(Color.parseColor("#44d56c"))

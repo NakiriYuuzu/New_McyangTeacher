@@ -55,7 +55,7 @@ class RaceAdapter(
         val raceList = differ.currentList[position]
         holder.binding.apply {
             if (raceList.sName.length < 2) iconText.text = raceList.sName
-            else iconText.text = raceList.sName.substring(2)
+            else iconText.text = raceList.sName.substring(raceList.sName.length - 2)
             when (raceList.answer) {
                 "0" -> {
                     eventText.text = holder.itemView.context.getString(R.string.race_text_Answer_0)
