@@ -1,0 +1,177 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TeacherMcyang" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_main_color</item>
+        <item name="colorPrimaryVariant">@color/green_secondary_color</item>
+        <item name="colorOnPrimary">@color/font_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_main_color</item>
+        <item name="colorSecondaryVariant">@color/blue_secondary_color</item>
+        <item name="colorOnSecondary">@color/font_black</item>
+
+        <!-- Top Bar Status Color -->
+        <item name="colorPrimaryDark">@color/green_main_color</item>
+    </style>
+
+    <!-- Custom Text color style -->
+
+    <style name="Style_CustomText_Light" parent="">
+        <item name="android:textColor">@color/font_white</item>
+    </style>
+
+    <style name="Style_CustomText_Dark" parent="">
+        <item name="android:textColor">@color/font_black</item>
+    </style>
+
+    <style name="Style_CustomText_Gray" parent="">
+        <item name="android:textColor">@color/font_gray</item>
+    </style>
+
+    <!-- Custom Button color style -->
+
+    <style name="CustomButton_GreenLight" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/font_white</item>
+        <item name="android:backgroundTint">@color/green_main_color</item>
+    </style>
+
+    <!-- Custom Layout Style -->
+
+    <style name="Style_CustomLoginBackground" parent="">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_BottomRounded</item>
+        <item name="cardBackgroundColor">@color/green_main_color</item>
+    </style>
+
+    <!-- Custom Dialog -->
+
+    <style name="Style_CustomDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/font_white</item>
+        <item name="dialogCornerRadius">25dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_Rounded</item>
+        <item name="materialAlertDialogTitlePanelStyle">@style/Title.Panel.Center</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/Message.Center</item>
+    </style>
+
+    <style name="Title.Panel.Center" parent="MaterialAlertDialog.MaterialComponents.Title.Panel">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="Message.Center" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- Custom Checkbox Style -->
+
+    <style name="Style_CustomCheckBox" parent="">
+        <item name="android:buttonTint">@color/green_main_color</item>
+    </style>
+
+    <!-- Custom Card Style -->
+
+    <style name="Style_Card_CustomDarkBackground" parent="">
+        <item name="cardBackgroundColor">@color/font_white</item>
+    </style>
+
+    <style name="Style_Card_CustomLoginBackground" parent="">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_BottomRounded</item>
+        <item name="cardBackgroundColor">@color/green_main_color</item>
+    </style>
+
+    <style name="CustomCard_ThemeBackground" parent="">
+        <item name="cardBackgroundColor">@color/light_background</item>
+    </style>
+
+    <style name="CustomCard_ThemeBackground_Secondary" parent="">
+        <item name="cardBackgroundColor">@color/light_background_secondary</item>
+    </style>
+
+    <style name="CustomCardCorners_BottomLeft" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_BottomLeft</item>
+        <item name="cardBackgroundColor">@color/green_main_color</item>
+    </style>
+
+    <style name="CustomCardCorners_BottomRight" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_BottomRight</item>
+        <item name="cardBackgroundColor">@color/green_main_color</item>
+    </style>
+
+    <style name="CustomCardCorners_TopLeft" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_TopLeft</item>
+        <item name="cardBackgroundColor">@color/font_white</item>
+    </style>
+
+    <style name="CustomCardCorners_TopRight" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_TopRight</item>
+        <item name="cardBackgroundColor">@color/font_white</item>
+    </style>
+
+    <style name="CustomCardCorners_ALL" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_Rounded</item>
+        <item name="cardBackgroundColor">@color/light_background</item>
+    </style>
+
+    <style name="CustomCardCorners_ALL_AliceBlue" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_Rounded</item>
+        <item name="cardBackgroundColor">@color/light_background</item>
+    </style>
+
+    <style name="CustomCardCorners_ALL_darkLight" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_Rounded</item>
+        <item name="cardBackgroundColor">@color/light_background</item>
+    </style>
+
+    <style name="CustomCardCorners_Circle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_Circle</item>
+        <item name="cardBackgroundColor">@color/font_white</item>
+    </style>
+
+    <style name="CustomCardCorners_Circle_ThemeColor" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners_Circle</item>
+        <item name="cardBackgroundColor">@color/green_main_color</item>
+    </style>
+
+    <!--Rounded Shape-->
+
+    <style name="ShapeAppearance_custom_corners_Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">100dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_TopRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeTopRight">25dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_BottomRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_BottomLeft" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_BottomRight" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_TopLeft" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners_TopRight" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">25dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.5dp"
+        style="@style/CustomCard_ThemeBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                style="@style/CustomCardCorners_Circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/icon_Text"
+                    android:gravity="center"
+                    android:text="測試"
+                    android:textStyle="bold"
+                    style="@style/Style_CustomText_Dark"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    app:autoSizeTextType="uniform" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_name"
+                style="@style/Style_CustomText_Dark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/applicationName"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/event_Button"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_id"
+                style="@style/Style_CustomText_Gray"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/applicationName"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/event_Button"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView3"
+                app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/event_Button"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                style="@style/CustomCardCorners_Circle"
+                app:strokeWidth="1.5dp"
+                app:strokeColor="@color/font_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/event_Text"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</ScrollView>

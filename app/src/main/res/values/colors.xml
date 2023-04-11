@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: LIGHT THEME COLOR -->
+
+    <color name="blue_main_color">#0085FF</color>
+    <color name="blue_secondary_color">#CC0085FF</color>
+    <color name="green_main_color">#00ba34</color>
+    <color name="green_secondary_color">#CC00BA34</color>
+    <color name="orange_main_color">#f98600</color>
+    <color name="orange_secondary_color">#CCF98600</color>
+    <color name="red_main_color">#e92c2c</color>
+    <color name="red_secondary_color">#CCE92C2C</color>
+    <color name="font_black">#D0000000</color>
+    <color name="font_white">#FFFFFF</color>
+    <color name="font_gray">#808080</color>
+    <color name="light_background">#e5f6df</color>
+    <color name="light_background_secondary">#DBFFE4</color>
+
+    <!-- TODO: DARK THEME COLOR -->
+
+    <color name="dark_blue_main_color">#1690ff</color>
+    <color name="dark_blue_secondary_color">#46a5ff</color>
+    <color name="dark_green_main_color">#17ca48</color>
+    <color name="dark_green_secondary_color">#44d56c</color>
+    <color name="dark_orange_main_color">#ff9f2e</color>
+    <color name="dark_orange_secondary_color">#ffb258</color>
+    <color name="dark_red_main_color">#f74140</color>
+    <color name="dark_red_secondary_color">#f96767</color>
+    <color name="dark_background">#1b1c27</color>
+    <color name="dark_background_secondary">#252635</color>
+
+    <!-- TODO: Other color -->
+    <color name="gray_color">#9AFFFFFF</color>
+    <color name="shimmer_background">#dddddd</color>
+
+</resources>

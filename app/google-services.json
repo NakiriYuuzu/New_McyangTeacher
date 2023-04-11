@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "505238986970",
+    "project_id": "newmcyang",
+    "storage_bucket": "newmcyang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505238986970:android:5618a5775cf0fe37da05e3",
+        "android_client_info": {
+          "package_name": "tw.edu.studentmcyang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505238986970-mj1rsg4821t0lq2f2m46iblg2v4fqqqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcs-t73eWjEhL-JOuGDBbngCxgH4hmvIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505238986970-mj1rsg4821t0lq2f2m46iblg2v4fqqqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505238986970:android:7205c906037ec56ada05e3",
+        "android_client_info": {
+          "package_name": "tw.edu.teachermcyang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505238986970-mj1rsg4821t0lq2f2m46iblg2v4fqqqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcs-t73eWjEhL-JOuGDBbngCxgH4hmvIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505238986970-mj1rsg4821t0lq2f2m46iblg2v4fqqqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
